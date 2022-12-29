@@ -1,0 +1,245 @@
+
+/* INICIO GRID */
+
+*{
+
+    box-sizing: border-box;
+}
+
+.container {  
+    width: 90%;
+    max-width: 1920px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 1em;
+    grid-template-areas: "navbar navbar navbar"
+                         "contenido contenido contenido"
+                         "widget widget2 aside"
+                         "widget3 widget4 aside"
+                         "footer footer footer";
+  }
+  
+.container > div,
+.container .navbar,
+.container .contenido,
+.container .aside,
+.container .footer,
+
+.container .navbar{
+    background-color: black;
+    grid-area: navbar;
+}
+
+.container .contenido{
+    background-color: white;
+    grid-area: contenido;
+    border-bottom: solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.container .widget{
+    text-align: center;
+    background-color: white;
+    grid-area: widget;
+}
+
+.container .widget2{
+    text-align: center;
+    background-color: white;
+    grid-area: widget2;
+}
+
+.container .widget3{
+    text-align: center;
+    background-color: white;
+    grid-area: widget3;
+}
+
+.container .widget4{
+    text-align: center;
+    background-color: white;
+    grid-area: widget4;
+}
+ 
+.container .footer{
+    border-top: solid;
+    background: white;
+    padding: 10px;
+    grid-area: footer;
+}
+
+.container .aside{
+    background: orange;
+    grid-area: aside;
+    word-wrap: break-word;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.titulo-marca{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    background-color: #555;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.aside{
+    align-items: center;
+    word-wrap: break-word;
+}
+
+
+/* FIN GRID */
+
+/* IMAGENES */
+
+img{
+    text-align: center;
+    align-items: center;
+    padding-right: 2px;
+    max-width: 258px;
+    max-height: 258px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* IMAGENES */
+
+/* BOTONES */
+
+.small-button{
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.cart_button{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    text-align: center;
+    color: black;
+    display: block;
+    width: 40px;
+    height: 45px;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+
+/* BOTONES */
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 770px){
+    .container{
+        grid-template-areas: 
+        "navbar navbar navbar"
+        "contenido contenido contenido"
+        "aside aside aside"
+        "widget widget widget"
+        "widget2 widget2 widget2"
+        "widget3 widget3 widget3"
+        "widget4 widget4 widget4"
+        "footer footer footer";
+    }
+}
+
+@media (max-width: 410px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: 0.5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .titulo-marca{
+        font-size: 6vw;
+        margin: 0.5rem;
+        margin-top: 2rem;
+        word-wrap: break-word;
+    }
+    .small-button{
+        font-size: 6vw;
+        width: fit-content;
+        border-radius: 4px;
+    }
+}
+
+/* MEDIA QUERY */
+

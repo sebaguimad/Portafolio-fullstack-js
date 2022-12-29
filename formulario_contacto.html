@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <base href="./assets/" target="_blank" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML" />
+    <meta
+      name="Sebastián Aguilera Madariaga"
+      content="Página enfocada a la práctica de HTML"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Día 2- Lección 2</title>
+  </head>
+  <body>
+    <h1>Formulario de contacto.</h1>
+    <section id="section-form">
+      <form action="/contactos" method="get">
+        <div>
+          <br>
+          <label for="Nombre">Nombre:</label>
+          <input type="text" name="nombre" placeholder="Coloca tu nombre aquí" required autofocus/>
+          <br/>
+        </div>
+        <div>
+          <br>
+          <label for="Correo electrónico">Correo electrónico:</label>
+          <input type="email" name="nombre" placeholder="Coloca tu correo aquí" required/>
+          <br/>
+        </div>
+        <div>
+          <br>
+          <label for="Teléfono">Teléfono celular:</label>
+          <input type="tel" name="Teléfono" />
+          <br/>
+        </div>
+        <div>
+          <br>
+          <button type="submit">Enviar</button>
+          <br/>
+        </div>
+      </form>
+      <datalist id="Color">
+        <option value="#00ffff">
+        <option value="#ff00ff">
+        <option value="#ffff00">
+        <option value="#ffaa00">
+    </datalist>
+    </section>
+  </body>
+</html>
