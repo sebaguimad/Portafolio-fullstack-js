@@ -13,4 +13,3 @@ El proyecto consiste en una página e-comerce la cual ofrece venta y manufactura
 -Tiene un catálogo de productos.
 -Tiene un footer con una descripción breve.# Portafolio-fullstack-js
 # Portafolio-fullstack-js
-# Portafolio-fullstack-js
