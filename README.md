@@ -12,3 +12,4 @@ El proyecto consiste en una página e-comerce la cual ofrece venta y manufactura
 -Tiene un aside el cual contiene una foto del taller y formulario de contacto, tiene un link a Aliexpress y a un formulario de contacto.
 -Tiene un catálogo de productos.
 -Tiene un footer con una descripción breve.# Portafolio-fullstack-js
+# Portafolio-fullstack-js
